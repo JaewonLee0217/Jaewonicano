@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<style>
+	body {
+		margin:0px;/*--바깥 여백*/
+		padding:0px;/*--안쪽 여백*/
+		background-color: ivory;
+	}
+
+	#menubar{ 
+		background : lavender;
+		 } 
+#menubar 
+ul{ /* 여백과패딩모두0*/ margin : 0; padding : 0; width: 567px;  /* 모든아이템(<li>)을한줄에품을수있는폭*/ } 
+#menubar ul li { display: inline-block;/* 새줄로넘어가지않게*/ list-style-type : none; /* 마커삭제*/ padding : 0px 15px;
+
+} 
+#menubar ul li a { color : white; text-decoration : none; /* 링크보이지않게*/ } 
+#menubar ul li a:hover { color: violet;  /* 마우스올라갈때색*/ }
+input[type=password]:focus{
+	font-size: 120%;
+}
+input:hover, textarea:hover{
+	background:aliceblue;
+}
+	a { 
+		background-color: rosybrown }
+	#list{
+		background-color: lightyellow;
+	}
+	li:hover{
+		background : pink;
+	}
+	.banner{
+		background-image: url("img/c1.jpg");
+/*background-position: center;*/
+		background-size: cover;
+		width:auto;
+		height:300px;
+text-align: center;
+font-size: 50px;
+color: mintcream;
+padding-top: 65px;
+	}
+
+	.header{
+		height: 60px;
+		margin-top:25px;
+		/*background-color: #23ff98;*/
+		padding-top: 20px;
+		text-align: center;/*텍스트 얼라인 센터*/
+	}
+	.login{
+		float:left;
+		min-height: 500px;
+		padding: 10px;
+		margin:10px;
+		font-family: 나눔고딕;
+		font-size: 15px;
+		background-color: white;
+
+	}
+
+	.aside{
+		float:right;
+		/*border: 1px solid red;*/
+		margin:10px;
+		padding:10px;
+		font-family: 나눔고딕;
+		font-size:16px;
+		color:coral;
+		background-color: ivory;
+
+	}
+	.section{
+		width:23%;
+		height: 50%;
+		float:left;
+		min-height: 500px;
+		padding:50px;
+		background-color: white;
+		font-family: 나눔고딕;
+		font-size: 18px;
+		color: #333333;
+
+	}
+	.footer{
+width:100%;
+height:15%;
+clear: both;
+		padding:0px;
+		background-color: pink;
+		font-family: 나눔고딕;
+		font-size: 18px;
+		color: #333333;
+
+	}
+</style>
+	<title>jaewonWebsite
+		</title>
+</head>
+<body>
+<nav id="menubar"> 
+	<ul> 
+		<li><a href="#login">로그인</a></li>
+		 <li><a href="#section">영업시간</a></li> 
+		 <li><a href="#login">요청사항</a></li> 
+		 <li><a href="#section">Menu</a></li> 
+		 <li><a href="#footer">사업자 정보</a></li> </ul> 
+		 <span style="font-size:10px">(5-9menubar활용하여 리스트메뉴,아이템에 마우스 올리면 글자 색 변경기능)<br/>
+		 (2-19태그의 id속성으로 앵커기능)</span>
+		</nav>
+
+	<div class=banner>
+<p>Cafe Jaewonicano</p>
+<span style="font-size:10px">(3-1 div 구조화된 HTML5문서작성)</span>
+</div>
+
+<div class=header>
+<b><div style="font-size: 17px;"><span style="color:red">Jaewonicano카페</span>를 소개합니다</div></b><span style="font-size:10px">(2-10 div 블록과 span 인라인태그 사용)</span>
+</div>
+
+<div class=aside>
+	<ul>
+	<li>깊고 풍부한 맛</li>
+	<li>착한 가격</li>
+		<li>조용한 분위기</li>
+		<li>Study Zone</li>
+		<li>문의 전화 02-6223-598*</li>
+		<img src="img/c3.jpg" height=300><br/>
+		<span style="font-size:10px">(5-9아이템에 마우스 올리면 글자 색 변경기능)<br/>(2-12 ul,li 리스트 만들기)<br/>(2-11 img 태그로 이미지 삽입)</span>
+		
+	</div>
+<div id= "login">
+	<a>로그인</a>
+	<form name="fo" method="get">
+		회원번호 : <input type = "password" size="15" value="">
+		<input type="submit" value="완료"></form>
+		<span style="font-size:10px">(3-5 로그인 폼 만들기)<br/>(5-11폼 요소에 마우스처리input시 hover,focus120%)</span><hr>
+		<form>
+			<a>저희 카페에 바라는 점(애로사항): </a><br/><textarea cols="18" row="5">
+				이곳에 작성해 주세요.
+			</textarea><input type="submit" value="완료">
+		</form>
+		<span style="font-size:10px">
+			(3-6 textarea를이용한 텍스트입력)<br/>(4-8 a태그를 활용한 스타일 중첩)<br/>(5-11폼 요소에 마우스처리input시 hover)
+		</span>
+
+
+	</div>
+
+
+
+
+
+<div id="section">
+	<p> <b>Menu</b>
+	 <br/><ul id = "list">
+
+		<li>Americano</li>
+		<li>CafeLatte</li>
+	<li>VanillaLatte</li>
+<li>Espresso</li>
+</ul>
+<span style="font-size:10px">(2-6 br 태그로 새로운 줄로 넘어가기)<br/>
+(2-12 ul,li 리스트 만들기)<br/>
+(4-9 셀렉터(id) 활용)
+</span>
+</p>
+	<b><p>Jaewonicano영업시간: 10a.m. ~ 2a.m.</p></b>
+	<img src ="img/c2.jpg" width=300px>
+<span style="font-size:10px" "color: #333333">(2-11 img 태그로 이미지 삽입)</span>
+<p>
+	<a href="root.html">찾아오시는 길</a><br/>
+	<span style="font-size:10px">(2-18 하이퍼링크 기능root.html로 이동)
+
+
+</div>
+
+	<div id="footer">
+		<hr>
+		<ul>
+		<p> <a>사업자정보</a><br/>
+			<li>전화번호 : 02-2016-726012<br/>
+			<li>지점 : 태릉입구역점 <br/>
+		대표자 : 이재원</p></ul>
+		<span style="font-size:10px">(2-13 ul로 정보나열기능)<br/>(4-8 a태그를 활용한 스타일 중첩)
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
